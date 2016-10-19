@@ -36,7 +36,12 @@ $(document).ready(function(){
   // body.toggle(250);
   // body.toggle(5000);
   // exercise 8
-  $(".row").each(function(){
-    $(this).children().eq(2).hide();
-  });
+  // $(".row").each(function(){
+  //   $(this).children().eq(2).hide();
+  // });
+  //exercise 9
+  $("#container").css("height", "100%");
+  var row = $("#row1").clone();
+  $("#container").append(row);
+  console.log($(".box").length);
 });

@@ -35,4 +35,5 @@ $(document).ready(function(){
   var body = $("body");
   body.toggle(250);
   body.toggle(5000);
+  console.log("waz up!");
 });

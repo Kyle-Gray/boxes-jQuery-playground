@@ -18,7 +18,7 @@ $(document).ready(function(){
 
   // exercise 3
   //method 1
-   $("#row1").children().removeClass().addClass("box boxType3");
+  //  $("#row1").children().removeClass().addClass("box boxType3");
   // method 2
   // $("#row1").children().each(function(){
   //   $(this).removeClass().addClass("box boxType3");
@@ -54,7 +54,11 @@ $(document).ready(function(){
   // addRows(row, 25);
 
   //exercise 10
-  // $(".row:first-child") == "boxType1"
+  $(".row").each(function(){
+  if($(this).children().attr("class").includes("boxType1")){
+    $(this).children().first().remove();
+  }
+});
 });
 
 // function addRows(row, numofrows){

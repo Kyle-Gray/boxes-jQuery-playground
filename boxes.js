@@ -32,8 +32,11 @@ $(document).ready(function(){
   // $("#container .box:not(#secretBox)").css("width", "2px");
   // console.log($("div.box").first().width()== 2);
   // exercise 7
-  var body = $("body");
-  body.toggle(250);
-  body.toggle(5000);
-  console.log("waz up!");
+  // var body = $("body");
+  // body.toggle(250);
+  // body.toggle(5000);
+  // exercise 8
+  $(".row").each(function(){
+    $(this).children().eq(2).hide();
+  });
 });

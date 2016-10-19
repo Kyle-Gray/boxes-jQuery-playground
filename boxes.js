@@ -5,6 +5,7 @@ $(document).ready(function(){
   // exercise 1
   // $("#secretBox").css("background", "white");
   // $("#secretBox").append($("<h1>Secret Box!</h1>"));
+
   //exercise 2
   // method 1
   // $(".boxType1").css("background", "white");
@@ -14,23 +15,28 @@ $(document).ready(function(){
   //   $(this).attr("style", "background-color: white");
   // }
   // });
+
   // exercise 3
   //method 1
-  // $("#row1").children().addClass("boxType3");
+   $("#row1").children().removeClass().addClass("box boxType3");
   // method 2
   // $("#row1").children().each(function(){
-  //   $(this).addClass("boxType3");
+  //   $(this).removeClass().addClass("box boxType3");
   // });
+
   // exercise 4
   // $("#row4").children().last().css("display", "none");
+
   // exercise 5
   // var twoDivs = $("#row2").children().slice(0,2);
   // twoDivs.removeAttr("style");
   // twoDivs.removeAttr("class");
   // console.log(twoDivs);
+
   // exercise 6
   // $("#container .box:not(#secretBox)").css("width", "2px");
   // console.log($("div.box").first().width()== 2);
+
   // exercise 7
   // var body = $("body");
   // body.toggle(250);
@@ -39,16 +45,20 @@ $(document).ready(function(){
   // $(".row").each(function(){
   //   $(this).children().eq(2).hide();
   // });
+
   //exercise 9
-  $("#container").css("height", "100%");
-  var row = $("#row1").clone();
-  $("#container").append(row);
-  console.log($(".box").length);
-  addRows(row, 25);
+  // $("#container").css("height", "100%");
+  // var row = $("#row1").clone();
+  // $("#container").append(row);
+  // console.log($(".box").length);
+  // addRows(row, 25);
+
+  //exercise 10
+  // $(".row:first-child") == "boxType1"
 });
 
-function addRows(row, numofrows){
-  for(var i=0; i<numofrows; i++){
-    $("#container").append(row.clone());
-  }
-}
+// function addRows(row, numofrows){
+//   for(var i=0; i<numofrows; i++){
+//     $("#container").append(row.clone());
+//   }
+// }

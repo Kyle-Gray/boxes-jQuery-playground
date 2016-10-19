@@ -44,4 +44,11 @@ $(document).ready(function(){
   var row = $("#row1").clone();
   $("#container").append(row);
   console.log($(".box").length);
+  addRows(row, 25);
 });
+
+function addRows(row, numofrows){
+  for(var i=0; i<numofrows; i++){
+    $("#container").append(row.clone());
+  }
+}

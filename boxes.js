@@ -9,9 +9,13 @@ $(document).ready(function(){
   // $(".boxType1").css("background", "white");
   $(".box").each(function(){
     if($(this).css("background-color") === "rgb(255, 0, 0)"){
-    $(this).attr("style", "background-color: purple");
+    $(this).attr("style", "background-color: white");
   }
   });
-
-
+// exercise 3
+$("#row1").children().addClass("boxType3");
+// $("#row1").children().each(function(){
+//   $(this).addClass("boxType3");
+// });
+//
 });

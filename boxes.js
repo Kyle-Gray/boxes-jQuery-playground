@@ -28,4 +28,8 @@ $(document).ready(function(){
   // twoDivs.removeAttr("style");
   // twoDivs.removeAttr("class");
   // console.log(twoDivs);
+  // exercise 6
+  $("#container .box:not(#secretBox)").css("width", "2px");
+  console.log($("div.box").first().width()== 2);
+
 });

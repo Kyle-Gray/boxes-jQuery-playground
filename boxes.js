@@ -12,10 +12,16 @@ $(document).ready(function(){
     $(this).attr("style", "background-color: white");
   }
   });
-// exercise 3
-$("#row1").children().addClass("boxType3");
-// $("#row1").children().each(function(){
-//   $(this).addClass("boxType3");
-// });
-//
+  // exercise 3
+  $("#row1").children().addClass("boxType3");
+  // $("#row1").children().each(function(){
+  //   $(this).addClass("boxType3");
+  // });
+  // exercise 4
+  $("#row4").children().last().css("display", "none");
+  // exercise 5
+  var twoDivs = $("#row2").children().slice(0,2);
+  twoDivs.removeAttr("style");
+  twoDivs.removeAttr("class");
+  console.log(twoDivs);
 });

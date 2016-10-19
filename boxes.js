@@ -29,7 +29,10 @@ $(document).ready(function(){
   // twoDivs.removeAttr("class");
   // console.log(twoDivs);
   // exercise 6
-  $("#container .box:not(#secretBox)").css("width", "2px");
-  console.log($("div.box").first().width()== 2);
-
+  // $("#container .box:not(#secretBox)").css("width", "2px");
+  // console.log($("div.box").first().width()== 2);
+  // exercise 7
+  var body = $("body");
+  body.toggle(250);
+  body.toggle(5000);
 });
